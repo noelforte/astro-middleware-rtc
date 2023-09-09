@@ -1,0 +1,23 @@
+---
+import { Image } from 'astro:assets';
+import sampleImg from '../images/sheng-hu-unsplash.jpg';
+---
+
+<html lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<meta name='viewport' content='width=device-width' />
+		<meta name='generator' content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<h1>Astro Sample Image Test</h1>
+		<Image
+			src={sampleImg}
+			alt='A vast starry sky with a shooting star streaking across it'
+			width='800'
+			quality='100'
+		/>
+	</body>
+</html>
