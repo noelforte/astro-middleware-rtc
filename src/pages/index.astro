@@ -13,11 +13,24 @@ import sampleImg from '../images/sheng-hu-unsplash.jpg';
 	</head>
 	<body>
 		<h1>Astro Sample Image Test</h1>
+		<h2>Image component</h2>
 		<Image
 			src={sampleImg}
 			alt='A vast starry sky with a shooting star streaking across it'
 			width='800'
 			quality='100'
+		/>
+		<h2>Local image</h2>
+		<img
+			src={sampleImg.src}
+			alt='A vast starry sky with a shooting star streaking across it'
+			width='800'
+		/>
+		<h2>Static image</h2>
+		<img
+			src='/sheng-hu-unsplash.jpg'
+			alt='A vast starry sky with a shooting star streaking across it'
+			width='800'
 		/>
 	</body>
 </html>
